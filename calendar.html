@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>SI Hackers</title>
+
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+		<link rel="stylesheet" type="text/css" href="./css/index.css">
+
+		<script src="http://use.typekit.net/gis6vng.js"></script>
+		<script>
+			try { Typekit.load(); } catch (e) {}
+		</script>
+
+	</head>
+	<body class="pure-skin-hacksi">
+
+		<div class="content">
+			<div class="header">
+				<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
+				<a class="pure-menu-heading" href="./index.html">SI HACKERS</a>
+
+				<ul>
+					<li class="pure-menu-selected"><a href="./index.html">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Membership</a></li>
+					<li><a href="#">Calendar</a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="pure-g content-ribbon">
+				<iframe src="https://www.google.com/calendar/embed?mode=WEEK&amp;showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=m46dr5unvmiid9nhi34iup95nk%40group.calendar.google.com&amp;color=%23B1440E&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23691426&amp;src=p%23weather%40group.v.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago" style=" border-width:0 " width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+			<div class="footer">
+				This webpage's source resides on <a href="http://www.github.com/Crackerz/sihackers_website">GitHub</a>
+			</div>
+		</div>
+
+		<script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>
+		<script>
+		YUI().use('node-base', 'node-event-delegate', function (Y) {
+			// This just makes sure that the href="#" attached to the <a> elements
+			// don't scroll you back up the page.
+			Y.one('body').delegate('click', function (e) {
+				e.preventDefault();
+			}, 'a[href="#"]');
+	});
+	</script>
+
+	</body>
+</html>
